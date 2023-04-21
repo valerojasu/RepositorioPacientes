@@ -9,9 +9,7 @@ function App() {
 
   return (
     <div className="App">
-     <Header/>
      <Formulario/>
-         <h1>Works</h1>
     </div>
   )
 }
