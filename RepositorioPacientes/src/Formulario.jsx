@@ -20,13 +20,14 @@ function Formulario(){
 
   
     return(
-        <div>
+        <div className="Formulario">
+            <h1 className="titulo">CREAR CITAS</h1>
         <form className="inputForm" action="">
-            <label htmlFor="">Nombre mascota</label>
-            <input onChange={(e) =>{setMascota(e.target.value)}} value={mascota} type="text"></input>
-            <label htmlFor="">Nombre Dueño</label>
-            <input onChange={(e) =>{setDueño(e.target.value)}} value={dueño} type="text"></input>
-            <button onClick={agregarPaciente} type="submit"> Agregar </button>
+            <label className="Formulariotext" htmlFor="" >Nombre mascota</label>
+            <input className="Formulariobox" onChange={(e) =>{setMascota(e.target.value)}} value={mascota} type="text"></input>
+            <label className="Formulariotext" htmlFor="">Nombre Dueño</label>
+            <input className="Formulariobox" onChange={(e) =>{setDueño(e.target.value)}} value={dueño} type="text"></input>
+            <button className="boton" onClick={agregarPaciente} type="submit"> Agregar </button>
         </form>                    
         
         </div>

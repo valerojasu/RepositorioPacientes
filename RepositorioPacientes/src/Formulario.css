@@ -1,0 +1,42 @@
+.Formulario{
+    background-image: url("assets/Backg.jpg");
+    width: 100%;
+}
+.inputForm{
+    display: flex;
+    margin: 4%;
+    width: 60%;
+    padding: 4%;
+    flex-direction: column;
+}
+
+.boton{
+    width: 20%;
+    padding: 2%;
+    margin: 2%;
+
+}
+
+.Formulariobox{
+    width: 40%;
+    margin: 1%;
+    border-radius: 1rem;
+    border: 0.8rem solid white;
+
+}
+.Formulariotext{
+    font-size: 1.2rem;
+    color: aliceblue;
+    text-align: start;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.titulo{
+    font-family: 'Vina Sans', cursive;
+    font-size: 3rem;
+    color: aliceblue;
+    text-align: start;
+    margin: 0% 7%;
+
+}
