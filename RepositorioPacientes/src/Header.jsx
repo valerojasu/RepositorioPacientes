@@ -1,14 +1,12 @@
 import React, {useState} from "react";
+import './Header.css'
 
-
-function Header(){
+function Header({titulo}){
   
     return(
         <div>
-        
-            <h2>Header</h2>
-                    
-        
+            <h2 className="titulito">{titulo}</h2>
+           
         </div>
     )
 }

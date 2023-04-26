@@ -1,10 +1,9 @@
 import React, {useState} from "react";
 import './Formulario.css'
 
-function Formulario(){
+function Formulario({pacientes,setPacientes}){
     const[mascota,setMascota]=useState("")
     const[dueño,setDueño]=useState("")
-    const[paciente,setPaciente]=useState([])
     const [fecha, setFecha]=useState("")
     const [hora, setHora]=useState("")
     const [sintoma, setSinto]=useState("")
@@ -19,7 +18,7 @@ function Formulario(){
          
         )
 
-        setPaciente([...paciente,informacion])
+        setPacientes([...pacientes,informacion])
         setMascota("")
         setDueño("")
         setSinto("")
@@ -29,7 +28,6 @@ function Formulario(){
   
     return(
         <div className="Formulario">
-            <h1 className="titulo">CREAR CITAS</h1>
         <form className="inputForm" action="">
             <label className="Formulariotext" htmlFor="" >Nombre Mascota</label>
             <input className="Formulariobox" onChange={(e) =>{setMascota(e.target.value)}} value={mascota} type="text" placeholder="Nombre Mascota"></input>
@@ -47,7 +45,7 @@ function Formulario(){
             <textarea className="Formulariotbox" onChange={(e) =>{setSinto(e.target.value)}} value={sintoma}id="exampleFormControlTextarea1" rows="3"></textarea>
 
 
-            <button className="boton" onClick={agregarPaciente} type="submit"> Agregar Cita </button>
+            <button className="boton" onClick={agregarPaciente} type="button"> Agregar Cita </button>
         </form>                    
         
         </div>
