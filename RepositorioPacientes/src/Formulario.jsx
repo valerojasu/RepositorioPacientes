@@ -9,14 +9,14 @@ function Formulario({pacientes,setPacientes}){
     const [sintoma, setSinto]=useState("")
 
     function agregarPaciente(){
-        const informacion=(
+        const informacion={ 
             mascota,
             dueño,
             fecha,
             hora,
             sintoma
          
-        )
+        }
 
         setPacientes([...pacientes,informacion])
         setMascota("")
@@ -45,11 +45,11 @@ function Formulario({pacientes,setPacientes}){
             <textarea className="Formulariotbox" onChange={(e) =>{setSinto(e.target.value)}} value={sintoma}id="exampleFormControlTextarea1" rows="3"></textarea>
 
 
-            <button className="boton" onClick={agregarPaciente} type="button"> Agregar Cita </button>
+            <button className="botonc" onClick={agregarPaciente} type="button"> Agregar Cita </button>
         </form>                    
         
         </div>
     )
 }
-
+ 
 export default Formulario

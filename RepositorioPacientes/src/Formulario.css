@@ -10,22 +10,27 @@
     flex-direction: column;
 }
 
-.boton{
-    width: 73%;
-    padding: 2%;
-    background-color: #48c4f4;
-    border: solid #48c4f4;
-    border-radius: 0.5rem;
-    margin: 2% 0%;
-    text-transform: uppercase;
-    font-weight: bold;
+.botonc{
+    display: inline-block;
+    align-items: flex-start;
+    background-color: #33C3F0;
     color: white;
+    width: 100%;
+    border: solid 1px #33C3F0;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    margin: 4% 2% ;
 
 }
 
 .Formulariobox{
     width: 100%;
-    margin: 1% 0% 2%;
+    margin: 1% 2% 2%;
     border-radius: 1rem;
     border: 0.8rem solid white;
 

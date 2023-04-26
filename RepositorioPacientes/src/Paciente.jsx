@@ -6,12 +6,12 @@ export default function Paciente({nombre,dueño,fecha,hora,sintoma}){
     return(
 
         <div className="PacienteC">
-            <h2>Nombre:  {nombre} </h2>
-            <h2>Dueño: {dueño}</h2>
-            <h2>Fecha: {fecha}</h2>
-            <h2>Hora: {hora}</h2>
-            <h2>Sintomas: {sintoma}</h2>
-
+            <h2 className="titul">Nombre:  {nombre} </h2>
+            <h2 className="titul">Dueño: {dueño}</h2>
+            <h2 className="titul">Fecha: {fecha}</h2>
+            <h2 className="titul">Hora: {hora}</h2>
+            <h2 className="titul">Sintomas: {sintoma}</h2>
+            <button className="botoncit">Eliminar</button>
         </div>
     )
 

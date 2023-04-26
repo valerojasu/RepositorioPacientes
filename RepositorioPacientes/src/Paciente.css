@@ -1,3 +1,35 @@
 .PacienteC{
-    background-color: aquamarine;
+    padding: 2% 8%;
+    background: #fff;
+    border-bottom: 1px solid #e1e1e1;
+    color: #000;
+    margin-top: 20% ;
+    border-radius: 1rem;
 }
+
+.titul{
+    padding: 1%;
+    background: #fff;
+    color: #000;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+.botoncit{
+    display: inline-block;
+    align-items: flex-start;
+    background-color: #c10059;
+    color: white;
+    width: 100%;
+    border: solid 1px #bbb;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    margin: 4% 0% 7%;
+}
+
